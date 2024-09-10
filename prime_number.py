@@ -6,4 +6,5 @@ def is_prime_number(x):
     print("The number {num1} is a prime number.".format(num1=x))
 
 run=is_prime_number(2)
+print("go to home")
 
