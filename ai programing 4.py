@@ -9,7 +9,10 @@ def main():
     person=user()
     for i in range(10):
         a=input()
-        person.append(a)
+        if a.isalpha():
+            person.append(a)
+        else:
+            break
     print(person.name)
     print(person[0])
 main()
