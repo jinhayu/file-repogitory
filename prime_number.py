@@ -1,10 +1,15 @@
-def is_prime_number(x):
-    for num in range(2, x):
-        if x % num == 0:
-            print("The number {num1} is not a prime number.".format(num1=x))
-            return
-    print("The number {num1} is a prime number.".format(num1=x))
+def number(n):
+    cnt=0
+    for i in range(2,1000001):
+        if n%i==0:
+            cnt+=1
+    if cnt==1:
+        return "prime"
+    else:
+        return "composite"
+    
 
-run=is_prime_number(2)
-print("go to home")
 
+
+a=int(input())
+print(number(a))
