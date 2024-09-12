@@ -1,9 +1,1 @@
-def maxProfit_bruteforce (prices):
-   max_price = 0
-
-   for i, price in enumerate(prices):
-       for j in range(i, len(prices)):
-           max_price = max(prices[j] - price, max_price)
-
-   return
-
+print("놀고싶어용요요요요요요요요요요요요요요ㅛ요요요요요요요요요ㅛ요요요요용ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ")
