@@ -1,3 +1,4 @@
+# gui
 import tkinter as tk
 def ChangeLabel():
     labeltext = label.cget("text")
