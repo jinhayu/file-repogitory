@@ -1,23 +1,22 @@
+import tkinter as tk
+def ChangeLabel():
+    labeltext = label.cget("text")
+    changeText = str(int(labeltext)+1)
+    label.config(text = changeText)
+def ChangeLabe2():
+    labeltext = label.cget("text")
+    changeText = str(int(labeltext)-1)
+    label.config(text = changeText)   
+def ChangeLabe3():
+    label.config(text = "0")    
 
-def main():
-    class user:
-        def __init__(self):
-            self.name=[]
-        def push(self,string):
-            self.name.append(string)
-        def __getitem__(self,item):
-            return self.name[item]
-        def __len__(self):
-            return len(self.name)
-    person=user()
-    for i in range(1000000):
-        a=input()
-        if a.isalpha():
-            person.push(a)
-        else:
-            break
-    print(person.name)
-    print(person[0])
-    print(len(person))
-main()
-   
+window = tk.Tk()
+label = tk.Label(window, text = "0")
+label.pack()
+button = tk.Button(window, text = "+", command = ChangeLabel)
+button1 = tk.Button(window, text = "-", command = ChangeLabe2)
+button2 = tk.Button(window, text = "clear", command = ChangeLabe3)
+button.pack()
+button1.pack()
+button2.pack()
+window.mainloop()
